@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getter Setter</title>
+</head>
+<body>
+<script>
+
+    // AKSES FUNCTION BUKAN PROPERTY person.fullname()
+    // const person = {
+    //     firstName : "Muhammad",
+    //     middleName : "Farraos",
+    //     fullName : function () {
+    //         return `${this.firstName} ${this.middleName}`;
+    //     }
+
+    // }
+
+    const person = {
+        firstName : "Muhammad",
+        middleName : "Farraos",
+        get fullName () {
+            return `${this.firstName} ${this.middleName}`;
+        },
+        set fullName(value){
+            const array = value.split(" ");
+            this.firstName = array[0];
+            this.middleName = array[1];
+        }
+
+    }
+
+    person.fullName = "Budi Nugraha"
+    console.table(person);
+
+    person.fullName = "Joko Moron"
+    console.table(person);
+
+    person.fullName = "Farraos"
+    console.table(person);
+
+    // person.firstName = "Budi";
+    // console.log(person.fullName);
+
+</script>
+</body>
+</html>

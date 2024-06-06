@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+<script>
+
+    const person = {
+        "Nama" : "Muhammad Farraos Abdillah",
+        "Alamat" : "Bandung",
+        "Umur" : "24"
+    };
+
+    // person["Orang"] = "Muhammad Farraos Abdillah";
+    // person["Alamat"] = "Bandung";
+    // person["Umur"] = "24";
+
+    console.table(person);
+
+    delete person["Umur"];
+
+    console.table(person);
+
+    person.push = {
+        "Tinggi" : "120",
+        "Berat Badang" : "69"
+    }
+
+    console.table(person);
+
+    console.log(`Nama : ${person.Nama}`);
+
+</script>
+</body>
+</html>

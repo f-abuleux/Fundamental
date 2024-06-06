@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring</title>
+</head>
+<body>
+<script>
+    
+    {
+        const names = ["Muhammad", "Farraos", "Abdillah", "Cikimin", 0, 3, 2,5];
+    const [firstName, middleName, lastName, ...others] = names;
+
+    console.log(firstName);
+    console.log(middleName);
+    console.log(lastName);
+    console.log(others);
+    }
+
+    {
+        const person = {
+            firstName : "Muhammad",
+            middleName : "Farraos",
+            lastName : "Abdillah",
+            Address : {
+                street : "gatau",
+                city : "Bandung",
+                country : "Indonesia"
+            },
+            hobby : "gaming"
+        }
+
+        const {firstName, middleName, lastName, Address : {street, city, country}, ...others} = person;
+        console.log(firstName);
+        console.log(middleName);
+        console.log(street);
+        console.log(city);
+        console.log(country);
+        console.log(others);
+    }
+    {
+        function displayPerson({firstName, middleName, lastName}) {
+            console.log(firstName);
+            console.log(middleName);
+            console.log(lastName);
+            
+        }
+
+        const person = {
+            firstName : "Muhammad",
+            middleName : "Farraos",
+            lastName : "Abdillah"
+        }
+
+        displayPerson(person);
+    }
+    {
+        function sum([first = 30, second]) {
+            return first + second;
+        }
+
+        console.log(sum([,1]));
+        console.log(sum([10,1]))
+    }
+
+
+</script>
+</body>
+</html>

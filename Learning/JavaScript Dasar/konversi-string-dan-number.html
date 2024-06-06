@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi</title>
+</head>
+<body>
+<script>
+
+    const value1 = parseInt(`1`);
+    const value2 = 1;
+    const sum = value1 + value2; 
+    
+    document.writeln(`<p>${sum}</p>`);
+    document.writeln(`<p>${parseInt("2.2")}</p>`);
+    document.writeln(`<p>${parseFloat("2.2")}</p>`);
+    document.writeln(`<p>${Number("2.42")}</p>`);
+
+    const a = 5;
+    const b = 6;
+    document.writeln(`<p>${a.toString()}${b.toString()}</p>`);
+
+    document.writeln(`<p>${parseInt("salah")}</p>`);
+    document.writeln(`<p>${parseFloat("2.2farraos")}</p>`);
+    document.writeln(`<p>${Number("salah")}</p>`); //Tidak mentolerir jika menggunakan Number
+    document.writeln(`<p>${Number("2.2farraos")}</p>`);
+
+    const c = Number("salah");
+    const total = c + 60000;
+    document.writeln(`<p>${total}</p>`);
+
+    document.write(`<p>${isNaN(total)}</p>`);
+    document.writeln(`<p>${isNaN(600)}</p>`);
+    document.write(`<p>${isNaN(NaN)}</p>`);
+    
+</script>
+</body>
+</html>

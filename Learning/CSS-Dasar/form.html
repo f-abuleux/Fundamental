@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        input{
+            margin: 2px;
+        }
+        #username, #password{
+            border-style: solid;
+            border-color: black;
+            border-radius:  10px;
+            padding: 10px ;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        #login{
+            border-style: none;
+            border-radius: 10px;
+            padding: 10px ;
+            background-color: bisque;
+        }
+        
+        #login:hover{
+            background-color: darkolivegreen;
+            transition-duration: 1s;
+            
+        }
+
+        #username:focus, #password:focus{
+            color: white;
+            background-color: grey;
+            border-style: none;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="username">
+            Username : <br>
+            <input type="text" required id="username">
+        </label><br>
+        <label for="password">
+            Password : <br>
+            <input type="password" required id="password">
+        </label><br>
+        <input type="submit" value="Submit" id="login">
+    </form>
+</body>
+</html>

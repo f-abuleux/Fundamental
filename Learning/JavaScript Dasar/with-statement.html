@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>With Statement</title>
+</head>
+<body>
+<script>
+
+    const nama = {
+        firstName : "Muhammad",
+        middleName : "Farraos",
+        lastName: "Abdillah"
+    }
+
+    console.log(nama.firstName);
+    console.log(nama.middleName);
+    console.log(nama.lastName);
+    
+    with (nama) {
+        console.log(firstName);
+        console.log(middleName);
+        console.log(lastName);
+    }
+
+</script>
+</body>
+</html>

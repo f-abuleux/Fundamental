@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm</title>
+</head>
+<body>
+<script>
+
+    const masuk = confirm("Anda Yakin Mau Masuk?");
+
+    if(masuk){
+
+        const nama = prompt("NAMA?")
+        
+        alert(`Hallo : ${nama}`);
+
+        const nilaiUlangan = prompt("Input Nilai Ulangan yang sudah dibagikan");
+
+        const hasilUlangan = parseInt(nilaiUlangan);
+
+        if(hasilUlangan > 85) {
+            alert(`Hallo ${nama} EXELLENTO`)
+                } else if(hasilUlangan > 70) {
+            alert(`Hallo ${nama} Selamat Kamu Lulus`);
+                } else if(hasilUlangan > 50) {
+            alert(`Hallo ${nama} NICE TRY`);
+                } else if(hasilUlangan > 0)
+            alert(`Hallo ${name} DE'GAGA HARAPANG`);
+    } else {
+        alert("KONTOL KAU");
+    }
+
+</script>
+</body>
+</html>

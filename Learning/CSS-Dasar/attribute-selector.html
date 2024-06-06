@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector</title>
+    <style>
+        a[target="_blank"] {
+            color: blanchedalmond;
+        }
+
+        /* Tanpa memilih selector [title*="belajar"] {
+            color: aquamarine;
+        } */
+
+        /* semua yang mengandung kata belajar p[title*="belajar"] {
+            color: aquamarine;
+        } */
+
+        /* diakhiri dengan belajar p[title$="belajar"] {
+            color: aquamarine;
+        } */
+
+        /* diawali dengan belajar p[title^="belajar"] {
+            color: aquamarine;
+        } */
+
+        /* belajar-  p[title|="belajar"] {
+            color: aquamarine;
+        } */  
+
+        /* ada kata belajar aja tidak tergabung p[title~="belajar"] {
+            color: aquamarine;
+        } */
+
+
+    </style>
+</head>
+<body>
+    <a href="" target="_self">Contoh 1</a>
+    <a href="">Contoh 1</a>
+    <a href="" target="_blank">Contoh 1</a>
+    <a href="">Contoh 1</a>
+
+    <p title="belajar pemrogramman">P TITLE</p>
+    <p title="belajarpemrogramman">P TITLE</p>
+    <p title="belajar-pemrogramman">P TITLE</p>
+    <p title="belajar">P TITLE</p>
+    <p title="pemrogramman belajar">P TITLE</p>
+    <span title="pemrogramman belajar">P TITLE</span>
+</body>
+</html>
