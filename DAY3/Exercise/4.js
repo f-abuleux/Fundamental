@@ -19,10 +19,10 @@ let rupiah = "";
 for (let i = strNumber.length; i > 0; i--) {
     // console.log(strNumber);
     rupiah = strNumber.charAt(i - 1) + rupiah;
-    // console.log(rupiah);
+    console.log(rupiah);
     count++;
     if(count % 3 === 0 && strNumber.length != count)
         rupiah = "." + rupiah;
-    console.log(rupiah);
+    // console.log(rupiah);
 }
-console.log(`Rp. ${rupiah},00`)
+// console.log(`Rp. ${rupiah},00`)
